@@ -56,6 +56,7 @@ cd /home/oracle/
 
 # Install software
 su - <<EOF
+cat /dev/null > /etc/dnf/vars/ociregion
 dnf update -y
 dnf install sudo -y
 dnf install nano -y
